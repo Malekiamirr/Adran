@@ -28,7 +28,7 @@ function ShowCards() {
   }
 
   return (
-    <div className="flex flex-wrap gap-10 max-w-7xl w-full border border-slate-200 rounded-xl">
+    <div className="flex flex-wrap gap-10 items-center justify-center p-10 w-5/6 border border-slate-200 rounded-xl">
       {posts.map(post => (
         <Card key={post.username} post={post} />
       ))}
