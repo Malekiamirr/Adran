@@ -23,6 +23,8 @@ function ShowCards() {
     fetchUserList();
   }, []);
 
+  console.log(posts);
+
   if (loading) {
     return <h1>Loading...</h1>;
   }
