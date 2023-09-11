@@ -1,8 +1,5 @@
-
-function SowCards() {
-  return (
-    <div>SowCards</div>
-  )
+function ShowCards() {
+  return <div></div>;
 }
 
-export default SowCards
+export default ShowCards;

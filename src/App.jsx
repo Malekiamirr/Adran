@@ -1,9 +1,10 @@
+import { ShowCards } from "./components"
 
 function App() {
 	
 	return (
 		<div>
-			<h2>For instructions, see the README file</h2>
+			<ShowCards/>
 		</div>
 	)
 }
