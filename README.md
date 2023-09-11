@@ -22,11 +22,10 @@ This React application was created as part of a hiring test to demonstrate my sk
 ## Installation and Setup
 
 1. Clone the repository: `git clone https://github.com/your-username/Adran.git`
-2. Navigate to the project directory: `cd Digikala`
+2. Navigate to the project directory: `cd Adran`
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm run dev`
-5. Navigate to the Data directory: `cd Data`
-6. Start the development json server: `npm run serve-json`
+5. Start the development json server: `npm run serve-json`
 
 ## Learn More
 
