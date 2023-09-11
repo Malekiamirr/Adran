@@ -1,0 +1,18 @@
+function convertToPersianNumber(num) {
+  const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+  const numString = num.toString();
+  let result = '';
+
+  for (let i = 0; i < numString.length; i++) {
+    const digit = parseInt(numString.charAt(i));
+    if (!isNaN(digit)) {
+      result += persianDigits[digit];
+    } else {
+      result += numString.charAt(i);
+    }
+  }
+
+  return result;
+}
+
+export default convertToPersianNumber;
