@@ -2,7 +2,7 @@ import moment from 'moment-jalaali';
 import convertToPersianNumber from './convertToPersianNumber';
 
 const convertToPersianTime = time => {
-  const persianTime = moment(time).format('jYYYY/jMM/jDD');
+  const persianTime = moment(time).format('HH:mm:ss - jYYYY/jMM/jDD');
 
   return convertToPersianNumber(persianTime, true);
 };

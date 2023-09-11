@@ -7,7 +7,7 @@ function Card({ post }) {
     <div className="w-[400px] h-[600px] border-gray-200 rounded-lg shadow">
       <CardHeader userName={post.username} name={post.name} />
       <CardImage />
-      <CardDetails />
+      <CardDetails timestamp={post.timestamp} text={post.text} />
     </div>
   );
 }
