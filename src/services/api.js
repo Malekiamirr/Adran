@@ -18,8 +18,7 @@ export async function deletePost(id) {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
     });
-
-    if (response.status === 204) {
+    if (response.status === 200) {
       return true;
     } else if (response.status === 404) {
       throw new Error('post not found');
