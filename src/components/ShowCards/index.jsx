@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { fetchPosts } from '../../services/api';
+import Card from '../Card';
 
 function ShowCards() {
   const [posts, setPosts] = useState([]);
@@ -22,7 +23,17 @@ function ShowCards() {
     fetchUserList();
   }, []);
 
-  return <div className="flex flex-wrap gap-10"></div>;
+  if (loading) {
+    return <h1>Loading...</h1>;
+  }
+
+  return (
+    <div className="flex flex-wrap gap-10 max-w-7xl w-full border border-slate-200 rounded-xl">
+      {posts.map(post => (
+        <Card key={post.username} post={post} />
+      ))}
+    </div>
+  );
 }
 
 export default ShowCards;

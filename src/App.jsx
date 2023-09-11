@@ -1,12 +1,11 @@
-import { ShowCards } from "./components"
+import { ShowCards } from './components';
 
 function App() {
-	
-	return (
-		<div>
-			<ShowCards/>
-		</div>
-	)
+  return (
+    <div className="flex items-center justify-center h-screen">
+      <ShowCards />
+    </div>
+  );
 }
 
-export default App
+export default App;
