@@ -22,7 +22,7 @@ function ShowCards() {
     fetchUserList();
   }, []);
 
-  return <div></div>;
+  return <div className="flex flex-wrap gap-10"></div>;
 }
 
 export default ShowCards;
